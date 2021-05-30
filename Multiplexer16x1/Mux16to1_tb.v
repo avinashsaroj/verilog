@@ -3,7 +3,7 @@
 
 module Mux16to1_tb;
 reg [15:0]A; reg[3:0]S; wire F;
-multiplexer M(.in(A),.sel(S),.out(F));
+    multiplexer M(.in(A),.sel(S),.out(F)); //function call
 
 initial begin
     $dumpfile("mux16to1.vcd");
